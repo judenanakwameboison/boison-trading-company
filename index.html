@@ -137,7 +137,7 @@ footer{padding:3rem 0 calc(3rem + env(safe-area-inset-bottom));text-align:center
 </div>
 
 <section id="hero">
-  <div class="layer hero-bg" data-speed="0.25" style="--img:url('img/hero.jpg')"></div>
+  <div class="layer hero-bg" data-speed="0.25" style="--img:url('hero.jpg')"></div>
   <div class="layer grid-l" data-speed="0.1"></div>
   <div class="giant" data-speed="-0.12" style="transform:translateY(-50%)">BOISON</div>
   <div class="beam" style="left:16.66%" data-speed="-0.2"></div>
@@ -236,7 +236,7 @@ const items=[["Cement","Portland cement in 50kg bags for foundations, blocks and
 const furn=[["Sofas & Sectionals","Comfortable living room sets in fabric and leather, built to last.","sofa","living"],["Wardrobes","Spacious sliding and hinged wardrobes in rich finishes.","wardrobe","bedroom"],["Beds & Frames","Solid bed frames and headboards for a restful bedroom.","bed","bedroom"],["Dining Sets","Tables and chairs for family meals and entertaining.","dining","dining"],["TV Stands & Units","Modern media units and wall cabinets for the living room.","tvstand","living"],["Centre & Side Tables","Statement tables in wood, glass and metal.","tables","living"],["Kitchen Cabinets","Fitted cabinets and shelving made to your measurements.","kitchen","dining"],["Office Furniture","Desks, executive chairs and storage for the workplace.","office","office"]];
 const sel=$('#it');
 const build=(list,box)=>list.forEach((x,i)=>{
- $(box).insertAdjacentHTML('beforeend',`<article class="card rv" data-r="${x[3]||''}" style="--d:${(i%4)*.1}s"><div class="im"><span class="n">0${i+1}</span><div class="ph" style="--img:url('img/${x[2]}.jpg')"></div></div><div class="t"><h3>${x[0]}</h3><p>${x[1]}</p><a data-i="${x[0]}">Request quote</a></div></article>`);
+ $(box).insertAdjacentHTML('beforeend',`<article class="card rv" data-r="${x[3]||''}" style="--d:${(i%4)*.1}s"><div class="im"><span class="n">0${i+1}</span><div class="ph" style="--img:url('${x[2]}.jpg')"></div></div><div class="t"><h3>${x[0]}</h3><p>${x[1]}</p><a data-i="${x[0]}">Request quote</a></div></article>`);
  sel.insertAdjacentHTML('beforeend',`<option>${x[0]}</option>`)});
 build(items,'#cards');build(furn,'#fcards');
 const mq=items.concat(furn).map(x=>x[0].split(' &')[0].toUpperCase()).join('<span>◆</span>')+'<span>◆</span>';
