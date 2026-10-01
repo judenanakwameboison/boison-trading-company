@@ -56,7 +56,7 @@ Open `index.html` in your browser.
 
 ## Customisation
 
-- **Phone number:** replace `233XXXXXXXXX` in `index.html` (WhatsApp link, call link and the `PHONE` constant in the script). Use the country code with no `+`.
+- **Phone number:** replace `233538387529` in `index.html` (WhatsApp link, call link and the `PHONE` constant in the script). Use the country code with no `+`.
 - **Products:** edit the `items` (hardware) and `furn` (furniture) arrays in the script.
 - **Images:** replace the files in `img/` using the same file names.
 
